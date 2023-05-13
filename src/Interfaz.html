@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Parqueadero</title>
+    <link rel="stylesheet" type="text/css" href="interfaz.css">
+</head>
+<body>
+
+<header>
+    <h1>Parqueadero</h1>
+</header>
+
+<main>
+    <section>
+        <h2>Registrar entrada de vehículo</h2>
+        <form>
+            <label for="placa">Placa:</label>
+            <input type="text" id="placa" name="placa" required>
+
+            <label for="marca">Marca:</label>
+            <input type="text" id="marca" name="marca" required>
+
+            <label for="modelo">Modelo:</label>
+            <input type="text" id="modelo" name="modelo" required>
+
+            <button type="submit">Registrar entrada</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Registrar salida de vehículo</h2>
+        <form>
+            <label for="placa2">Placa:</label>
+            <input type="text" id="placa2" name="placa2" required>
+
+            <button type="submit">Registrar salida</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Listado de vehículos en el parqueadero</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Placa</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Fecha y hora de entrada</th>
+            </tr>
+            </thead>
+            <tbody id="vehiculos">
+
+            </tbody>
+        </table>
+    </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
